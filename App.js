@@ -35,10 +35,11 @@ import RegisterScreen from './components/auth/Register'
 import LoginScreen from './components/auth/Login'
 import MainScreen from './components/Main'
 import ArticleScreen from './components/main/Article'
-import SaveScreen from './components/main/Save'
 import PostScreen from './components/main/PostScreen'
 import PostArticle from './components/main/PostArticle'
 import ResetPasswordScreen from './components/auth/Resetpassword'
+import MakeapointmentScreen from './components/Main/Makeapointment'
+import HistoryScreen from './components/Main/History'
 
 
 const Stack = createStackNavigator();
@@ -134,8 +135,13 @@ componentDidMount() {
                 navigation={this.props.navigation}
               />
               <Stack.Screen 
-                name="Save" 
-                component={SaveScreen}
+                name="Makeapointment" 
+                component={MakeapointmentScreen}
+                navigation={this.props.navigation}
+              />
+              <Stack.Screen 
+                name="History" 
+                component={HistoryScreen}
                 navigation={this.props.navigation}
               />
           </Stack.Navigator>

@@ -10,7 +10,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import FeedScreen from './main/Feed'
 import ArticleScreen from './main/Article'
 import ProfileScreen from './main/Profile'
-import SettingsScreen from './main/Settings'
+import ApointmentScreen from './main/Apointment'
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -46,7 +46,7 @@ export class Main extends Component {
                             <MaterialCommunityIcons name="plus-box" color={color} size={26} />
                         ),
                 }}/>
-                <Tab.Screen name="Settings" component={SettingsScreen}
+                <Tab.Screen name="Apointment" component={ApointmentScreen}
                     options={{ 
                         tabBarIcon: ({ color, size }) => (
                             <MaterialCommunityIcons name="format-list-bulleted" color={color} size={26} />
